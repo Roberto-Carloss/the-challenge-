@@ -1,0 +1,257 @@
+
+
+main{
+    background-color: $color_text;
+    width: 100%;
+    
+     
+
+
+
+.sectionMain{
+    background-color:$color_text ;
+    padding: 10px;
+    margin: 10px $color_text;
+    
+
+
+    &-title{
+        font-size: 45px;
+        padding: 25px;
+    }
+
+    &_article{
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        &-paragraf{
+            padding: 10px;
+            margin: 10px;
+            font-family:'Arial Narrow Bold';
+        }    
+    }
+}
+
+
+
+
+.container{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+
+   
+    &_article{
+        background-color: rgb(90, 24, 90);
+        border-radius: 15px;
+        width: 600px;
+        height: 340px;
+
+         
+
+        & .emojis{
+            position: absolute;
+            z-index: 500; 
+            
+            & .good, .happy, .eyes, .ligth{
+                position: absolute;
+                display: flex;
+                width: 60px;
+                height: 40px;
+                background-color: white;
+                padding: 10px;
+                border-radius: 30px;
+                gap: 12px;
+                
+                box-shadow: 1px 1px 1px black;
+                & p{
+                    font-size: 20px;
+                    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                }
+    
+            }
+    
+            & .good, .happy, .eyes, .ligth {
+                width: 30px;
+            }
+    
+            
+    
+            & .good{
+                top: -12px;
+                right: -200px;
+            }
+    
+            & .happy{
+                top: 220px;
+                right: -20px;
+               
+            } 
+    
+            & .eyes {
+                bottom: -320px;
+                right: -450px;
+            }
+               
+    
+            & .ligth{
+                bottom: -220px;
+                right: -610px;
+               
+            }
+        }
+        
+
+        
+
+         
+        &-colors{
+            display: flex;
+            padding: 10px;
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            border-radius: 8px;
+
+
+            .red{
+            @include measuresborder;
+            background-color: red;
+            margin-right: 5px;
+            
+            }
+
+            .yellow{
+            @include measuresborder;
+            background-color: yellow;
+            margin-right: 5px;
+
+            }
+
+
+
+            .green{
+            @include measuresborder;
+            background-color: green;
+            
+            }
+
+        }
+
+                
+        &-section{
+            display: flex;
+            gap: 80px;
+           
+
+            .section-purple{
+                font-size: 16px;
+                font-family: 'Times New Roman', Times, serif;
+                margin: 10px 0px 0px 10px;
+                width: 15%;
+                gap: 10px;
+                color: white; 
+            
+
+                & p {
+
+                    margin-top: 10px;
+                    width: 120px;
+                    
+                }
+                
+                & p:hover {
+                    background-color: rgb(144, 228, 228);
+                    
+                }
+
+            }
+
+            .section-white{
+                display: flex;
+                width: 75%; 
+                flex-direction: column;
+                height: 310px; 
+                padding: 8px;
+                gap: 40px;
+                background-color: white;
+
+                    & .titleProyect{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        & .humans{
+                            width: 150px;
+                            padding-left: 15px;
+                        }
+                    }
+
+                    & .women{
+                        display: flex;
+                        
+                        
+
+
+                        & .imagenWomen{
+                            width: 80px;
+                            height: 70px;
+                            margin-right: 10px;
+                        }
+
+                        & div{
+                            display: block;
+                            
+                        }
+                    }
+
+                        
+                    & .men{
+                        display: flex;
+                        
+
+
+                        & .imagenMen{
+                            width: 70px;
+                            height: 70px;
+                            margin-right: 10px;
+                        }
+
+                        & div{
+                            display: block;
+                            
+                        }
+
+                        & .document{
+                            width: 40px;
+                            padding: 5px;
+            
+                        }
+
+                    }
+
+            }
+        }
+    }       
+}
+}
+
+
+
+@media screen and ((min-width:900px) and (min-width:1024px)) {
+    .allMain{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px $color_text;
+        
+
+    }
+
+
+}

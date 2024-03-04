@@ -1,0 +1,26 @@
+.header{
+    background-color:#F5EFE9  ;
+    padding: 10px;
+    
+    
+
+    &_nav{
+        
+        right: -470px;
+        display: flex;
+        justify-content: space-between;
+
+        &-logo{
+            width: 110px;
+            
+    
+        }
+    
+        &-hamb{
+            width: 50px;
+          
+    
+        }
+
+    }
+}    

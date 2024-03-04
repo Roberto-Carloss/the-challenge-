@@ -1,0 +1,49 @@
+
+@media screen and ((min-width: 450px) and (min-width:500px)) {
+    .footer{
+        display: none;
+    }
+   
+}
+
+
+@media screen and ((min-width:900px) and (min-width:1024px)) {
+    .footer{
+        display: inline;
+        &_enterprise{
+            display: flex;
+            margin-left: 30px;
+            justify-content:space-around ;
+            align-items: center;
+
+          .fox{
+            width: 100px;
+        
+          }
+
+          .lonely{
+            width: 100px;
+          }
+
+          .intuit{
+            width: 100px;
+          }
+
+          .carvana{
+            width: 100px;
+          }
+
+          .kiva{
+            width:100px ;
+          }
+
+          .diana{
+            width: 100px;
+          }
+
+          .deva{
+            width: 100px;
+          }
+        }
+    }
+}
